@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+
+/* Header section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(3rem, 4vw, 5rem);
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.title {
+    font-size: clamp(2rem, 2.8vw, 3rem);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.navlinks {
+    display: flex;
+    gap: 3rem;
+    border-radius: 10px;
+    padding: 1.5vh 3vw;
+}
+
+.navlinks a {
+    color: white;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navlinks a:hover {
+    text-decoration: underline rgb(255, 213, 0);
+    text-underline-offset: 10px;
+    transform: 0.3s ease-in-out;
+}
+
+.navbar button {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 1.2vh 1.5vw;
+    border-radius: 10px;
+    border: 2px solid rgb(200, 160, 0);
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar button :hover {
+    border: 2px solid rgb(255, 204, 0);
+}
+
+#hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu{
+    display:none;
+}
+
+#menu.active{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+
+.banner {
+    min-height: 100vh;
+    position: relative;
+    /* background: linear-gradient(to right, transparent), url("assets/BMW7.png") center/cover no-repeat; */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* SLIDER */
+
+.carousal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    align-items: center;
+
+}
+
+.slide.active {
+    opacity: 1;
+
+}
+
+.slide img {
+    position: absolute;
+    display: block;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.content {
+    position: absolute;
+    z-index: 2;
+    margin-left: 8%;
+    color: #fff;
+}
+
+.content {
+    width: fit-content;
+    color: white;
+    font-family: "poppins", sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.content p:first-of-type {
+    color: rgb(255, 213, 0);
+    font-size: clamp(0.5rem, 0.8vw, 2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+}
+
+.content p:last-of-type {
+    color: rgb(195, 195, 195);
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-weight: 100;
+}
+
+.content h1 {
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    font-weight: 700;
+}
+
+.content h6 {
+    font-size: clamp(0.8rem, 2vw, 2.5rem);
+    font-weight: 100;
+}
+
+
+.content button {
+    color: black;
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    font-weight: 600;
+    background-color: rgb(251, 184, 0);
+    border: none;
+    border-radius: 10px;
+    padding: clamp(0.4rem, 0.8vw, 1.8rem) clamp(0.6rem, 1.8vw, 3rem);
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 20px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.253);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stats {
+    display: flex;
+    width: fit-content;
+    gap: 3rem;
+    color: white;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    margin-top: 5%;
+    margin-left: 10%;
+    letter-spacing: 2px;
+}
+
+.demo {
+    line-height: 2;
+}
+
+.demo i {
+    font-size: clamp(1rem, 1.6vw, 2.5rem);
+}
+
+.demo h4 {
+    font-size: clamp(0.8rem, 1vw, 2rem);
+    font-weight: 100;
+}
+
+.demo p {
+    color: rgb(186, 186, 184);
+}
+
+
+/* Features Hightlihts Section */
+
+
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+}
+
+.features-highlight h1 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 5rem);
+    text-underline-offset: 10px;
+    text-align: center;
+    padding-top: 2vw
+}
+
+.feature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 23, 24);
+    border-radius: 10px;
+    padding: clamp(0.8rem, 1vw, 1.8rem) clamp(1.5rem, 3vw, 5rem);
+    font-family: poppins, sans-serif;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.feature i {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.feature h3 {
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 600;
+}
+
+.feature p {
+    font-size: clamp(0.8rem, 1vw, 1.8rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+}
+
+.about-preview {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), url("assets/BMW5.png") center/cover no-repeat;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.about-content p {
+    color: rgb(182, 182, 180);
+    font-size: clamp(0.5rem, 0.8vw, 2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+}
+
+.about-content {
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-family: "poppins", sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.about-content h1 {
+    font-size: clamp(2rem, 3.5vw, 5.5rem);
+    font-weight: 600;
+}
+
+.about-content p {
+    font-size: clamp(0.8rem, 1.5vw, 3rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: clamp(1rem, 2vw, 4rem);
+    margin-bottom: clamp(1rem, 2vw, 4rem);
+
+}
+
+.about-content button {
+    color: black;
+    font-weight: 600;
+    background-color: rgb(251, 184, 0);
+    border: none;
+    border-radius: 10px;
+    padding: clamp(0.4rem, 0.8vw, 1.8rem) clamp(0.6rem, 1.8vw, 3rem);
+    cursor: pointer;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: white;
+    font-family: "poppins", sans-serif;
+    padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(0.8rem, 1vw, 1.8rem) clamp(1.5rem, 3vw, 5rem);
+    border-radius: 5px;
+    background-color: rgb(23, 23, 24);
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+}
+
+.statistics i {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.statistics h4 {
+    font-size: clamp(1rem, 2vw, 3.5rem);
+    font-weight: 100;
+}
+
+.statistics p {
+    font-size: clamp(0.8rem, 1vw, 1.8rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+    /* background-color: rgb(23, 23, 24); */
+    line-height: 1.5;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+    line-height: 2;
+
+}
+
+.footer-section a:hover {
+    color: rgb(255, 213, 0);
+    transform: 0.3s ease-in-out;
+}
+
+.drivex h2 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.drivex p {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(0.8rem, 1.1vw, 2.6rem);
+    color: rgb(186, 186, 184);
+}
+
+.quick-links h4 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 100;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.resources h4 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 100;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.follow-us h4 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-weight: 100;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.follow-us a {
+    padding: 8px;
+    background: #424141;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.follow-us a:hover {
+    color: #333;
+    background: rgb(255, 204, 0);
+    transition: 0.3s;
+}
+
+.follow-us ul {
+    display: flex;
+}
+
+/* Model section starts here */
+
+.model-header {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent), url("assets/BMW9.png") center/cover no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.model-content {
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-family: "poppins", sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.model-content p:first-of-type {
+    color: rgb(255, 213, 0);
+    font-size: clamp(0.5rem, 0.8vw, 2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+}
+
+.model-content h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.model-content p:last-of-type {
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+    /* line-height: 1.5; */
+    margin-top: clamp(1rem, 2vw, 4rem);
+}
+
+.m-stats {
+    /* width: fit-content; */
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    /* margin-top: 5%; */
+    margin-left: 5%;
+    letter-spacing: 2px;
+}
+
+.m-demo {
+    line-height: 2;
+    /* background-color: rgba(13, 13, 13, 0.486); */
+    padding: clamp(0.8rem, 1vw, 1.8rem) clamp(1rem, 2vw, 4.5rem);
+    border-radius: 5px;
+    /* box-shadow: 0 0 1px rgb(255, 255, 255); */
+    margin-right: clamp(2rem, 4vw, 6rem);
+    width: 150px;
+}
+
+.m-demo i {
+    font-size: 25px;
+}
+
+.m-demo h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.m-demo p {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(186, 186, 184);
+}
+
+
+.m-collections {
+    width: fit-content;
+    margin: 20px auto;
+    font-family: "poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    /* text-decoration: underline rgb(255, 213, 0); */
+    text-underline-offset: 10px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 999;
+
+}
+
+.m-collections::before {
+    position: absolute;
+    content: " OUR COLLECTION";
+    left: -6px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: grey;
+    color: transparent;
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+select {
+    font-weight: 600;
+    background-color: rgb(255, 213, 0);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#car-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+#car-container h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#car-container p{
+    margin-bottom: 15px;
+}
+
+#car-container button {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(219, 217, 209);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.car-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;    
+}
+
+.car-card:hover {
+    transform: scale(1.02);
+    transition: all ease-out 0.3s;
+}
+
+.car-info {
+    padding: 15px;
+}
+
+.car-info button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.cta-banner {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent), url("assets/BMW8.png") center/cover no-repeat;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-content {
+    width: fit-content;
+    margin-top: 20%;
+    margin-left: 10%;
+    text-align: left;
+    letter-spacing: 1.5;
+    font-family: poppins, sans-serif;
+}
+
+.cta-content h1 {
+    font-size: clamp(2.5rem, 4vw, 6rem);
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+    margin-top: clamp(0.8rem, 1.5vw, 3rem);
+}
+
+.cta-content button {
+    color: black;
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+    font-weight: 600;
+    background-color: rgb(251, 184, 0);
+    border: none;
+    border-radius: 10px;
+    padding: clamp(0.4rem, 0.8vw, 1.8rem) clamp(0.6rem, 1.8vw, 3rem);
+    margin-top: clamp(0.8rem, 1.5vw, 3rem);
+    cursor: pointer;
+}
+
+.our-story {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), url("assets/grp-cars.png") center/cover no-repeat;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-story-content {
+    width: fit-content;
+    margin-top: 20%;
+    margin-left: 10%;
+    text-align: left;
+    letter-spacing: 1.5;
+    font-family: poppins, sans-serif;
+}
+
+
+.our-story-content h1 {
+    font-size: clamp(2.5rem, 4vw, 6rem);
+    font-weight: 700;
+}
+
+.our-story-content p {
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+    margin-top: clamp(0.8rem, 1.5vw, 3rem);
+    width: 50%;
+}
+
+
+.our-values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+}
+
+.our-values h1 {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 5rem);
+    text-decoration: underline rgb(255, 213, 0);
+    text-underline-offset: 10px;
+    text-align: center;
+    padding-top: 2vw
+}
+
+.values-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 23, 24);
+    border-radius: 10px;
+    padding: clamp(0.8rem, 1vw, 1.8rem) clamp(1.5rem, 3vw, 5rem);
+    font-family: poppins, sans-serif;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.values-content i {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.values-content h3 {
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 600;
+}
+
+.values-content p {
+    font-size: clamp(0.8rem, 1vw, 1.8rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+}
+
+.choose-us {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), url("assets/BMW10.png") center/cover no-repeat;
+    position: relative;
+    object-fit: cover;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.choose-content {
+    width: fit-content;
+    margin-top: 20%;
+    margin-left: 10%;
+    text-align: left;
+    font-family: poppins, sans-serif;
+}
+
+.choose-content h1 {
+    font-size: clamp(2rem, 3.5vw, 5.5rem);
+    font-weight: 600;
+    margin-bottom: clamp(0.8rem, 1.5vw, 3rem);
+}
+
+.choose-content p {
+    font-size: clamp(0.8rem, 1.5vw, 3rem);
+    color: rgb(186, 186, 184);
+    font-weight: 100;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* MOBILE VIEW */
+@media (max-width : 768px) {
+    .navbar {
+        padding: 1rem 1rem;
+        align-items: center;
+    }
+
+    .navlinks,
+    .navbar .btn {
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
+     #menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        height: fit-content;
+        background: rgba(61, 60, 60, 0.767);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        border-radius: 30px 15px;
+    }
+
+    #menu.active{
+        display: flex;
+    }
+
+    #menu a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #252424;
+    }
+
+    #menu a:last-child{
+        border-bottom: none;
+    }
+
+    .feature-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        font-family: "poppins", sans-serif;
+        padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+    }
+
+    .footer-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+        line-height: 1.5;
+    }
+
+   
+
+    .banner {
+        min-height: 100vh;
+        position: relative;
+        background: linear-gradient(to right, transparent), url(assets/mb-grp-cars.png) center / cover no-repeat;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .content {
+        margin-right: 10%;
+        margin-top: 50%;
+        margin-left: 10%;
+        color: white;
+        font-family: "poppins", sans-serif;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .stats {
+        display: none;
+
+    }
+
+    .content p:last-of-type {
+        color: rgb(195, 195, 195);
+        font-size: clamp(0.8rem, 1vw, 2rem);
+        font-weight: 100;
+    }
+
+    .content p:first-of-type {
+        color: rgb(255, 213, 0);
+        font-size: clamp(0.8rem, 0.8vw, 2rem);
+        margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    }
+
+    .content h1 {
+        font-size: clamp(3rem, 5vw, 6rem);
+        font-weight: 700;
+    }
+
+    .content h6 {
+        font-size: clamp(1.2rem, 2vw, 2.5rem);
+        font-weight: 100;
+    }
+
+    .about-content {
+        margin-right: 10%;
+        margin-top: 50%;
+        margin-left: 10%;
+        color: white;
+        font-family: "poppins", sans-serif;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .about-content p:first-of-type {
+        color: rgb(180 180 179);
+        font-size: clamp(0.8rem, 1.2vw, 2rem);
+        margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    }
+
+    .about-preview {
+        min-height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), url(assets/mobileabout.png) center / cover no-repeat;
+        position: relative;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .about-content button {
+        color: black;
+        font-weight: 600;
+        background-color: rgb(251, 184, 0);
+        border: none;
+        border-radius: 10px;
+        padding: clamp(0.6rem, 1vw, 1.8rem) clamp(0.6rem, 1.8vw, 3rem);
+    }
+
+    .follow-us a {
+        padding: 8px;
+        background: #424141;
+        margin-right: 0.5rem;
+        font-size: 20px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .car-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .model-content {
+        margin-right: 10%;
+        margin-top: 50%;
+        margin-left: 10%;
+        color: white;
+        font-family: "poppins", sans-serif;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .m-stats {
+        display: none;
+    }
+
+    .m-demo {
+        line-height: 2;
+        margin-right: clamp(2rem, 4vw, 6rem);
+        width: 20px;
+    }
+
+    .m-demo h4 {
+        font-size: clamp(1.22rem, 1vw, 2rem);
+        font-weight: 100;
+    }
+
+    .m-demo p {
+        font-size: clamp(0.8rem, 0.7vw, 1.2rem);
+        font-weight: 100;
+        color: rgb(202 202 195);
+    }
+
+    .model-header {
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(assets/mobilemodel.png) center / cover no-repeat;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .model-content p:last-of-type {
+        font-size: clamp(0.8rem, 1.3vw, 3rem);
+        color: rgb(225 225 225);
+        font-weight: 100;
+        margin-top: clamp(1rem, 2vw, 4rem);
+    }
+
+    .cta-content {
+        margin-right: 10%;
+        margin-top: 50%;
+        margin-left: 10%;
+        color: white;
+        font-family: "poppins", sans-serif;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .cta-banner {
+        min-height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent), url(assets/mbcontact.png) center / cover no-repeat;
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .our-values {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: clamp(2rem, 5vw, 5rem) clamp(4rem, 8vw, 10rem);
+    }
+
+    .our-story-content {
+        margin-top: 150px;
+        margin-left: 10%;
+        text-align: left;
+        letter-spacing: 1.5;
+        font-family: poppins, sans-serif;
+    }
+
+    .our-story {
+        min-height: 100vh;
+        background: linear-gradient(to right, transparent), url(assets/mb-grp-cars.png) center / cover no-repeat;
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .choose-content {
+        margin-right: 10%;
+        margin-top: 50%;
+        margin-left: 10%;
+        color: white;
+        font-family: "poppins", sans-serif;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .choose-us {
+        min-height: 100vh;
+        background: linear-gradient(to right, transparent), url(assets/mb-choose-us.png) center / cover no-repeat;
+        position: relative;
+        object-fit: cover;
+        line-height: 1.5;
+        overflow: hidden;
+    }
+}
+

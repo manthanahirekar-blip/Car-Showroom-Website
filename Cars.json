@@ -1,0 +1,362 @@
+{
+    "BMW": [
+  {
+    "model": "M2",
+    "price": "₹1.03 Cr",
+    "power": "453 hp",
+    "topSpeed": "285 km/h",
+    "image": "./images/BMW_M2.png"
+  },
+  {
+    "model": "M3",
+    "price": "₹1.47 Cr",
+    "power": "503 hp",
+    "topSpeed": "290 km/h",
+    "image": "./images/BMW_M3.png"
+  },
+  {
+    "model": "M4",
+    "price": "₹1.55 Cr",
+    "power": "503 hp",
+    "topSpeed": "250 km/h",
+    "image": "./images/BMW_M4.png"
+  },
+  {
+    "model": "M5",
+    "price": "₹1.99 Cr",
+    "power": "717 hp",
+    "topSpeed": "305 km/h",
+    "image": "./images/BMW_X5.png"
+  }
+],
+    "Audi": [
+  {
+    "model": "R8",
+    "price": "₹2.72 Cr",
+    "power": "602 hp",
+    "topSpeed": "330 km/h",
+    "image": "./images/AUDI_R8.png"
+  },
+  {
+    "model": "RS5",
+    "price": "₹1.13 Cr",
+    "power": "444 hp",
+    "topSpeed": "250 km/h",
+   "image": "./images/AUDI_RS5.png"
+  },
+  {
+    "model": "RS7",
+    "price": "₹2.24 Cr",
+    "power": "591 hp",
+    "topSpeed": "305 km/h",
+    "image": "./images/AUDI_RS7.png"
+  },
+  {
+    "model": "Q8",
+    "price": "₹1.17 Cr",
+    "power": "335 hp",
+    "topSpeed": "250 km/h",
+   "image": "./images/Audi_Q8.png"
+  },
+  {
+    "model": "A6",
+    "price": "₹72 Lakh",
+    "power": "261 hp",
+    "topSpeed": "250 km/h",
+   "image": "./images/AUDI_A6.png"
+  }
+],
+    "MercedesBenz": [
+  {
+    "model": "C63",
+    "price": "₹1.95 Cr",
+    "power": "671 hp",
+    "topSpeed": "280 km/h",
+    "image": "./images/C63.png"
+  },
+  {
+    "model": "E63",
+    "price": "₹1.80 Cr",
+    "power": "603 hp",
+    "topSpeed": "300 km/h",
+   "image": "./images/E63.png"
+  },
+  {
+    "model": "G63",
+    "price": "₹3.60 Cr",
+    "power": "577 hp",
+    "topSpeed": "240 km/h",
+    "image": "./images/G63.png"
+  },
+  {
+    "model": "S Class",
+    "price": "₹1.79 Cr",
+    "power": "429 hp",
+    "topSpeed": "250 km/h",
+   "image": "./images/S-class.png"
+  },
+  {
+    "model": "GLS",
+    "price": "₹1.34 Cr",
+    "power": "362 hp",
+    "topSpeed": "250 km/h",
+    "image": "./images/GLS.png"
+  }
+],
+    "Ferrari": [
+  {
+    "model": "SF90 Stradale",
+    "price": "₹7.50 Cr",
+    "power": "986 hp",
+    "topSpeed": "340 km/h",
+   "image": "./images/ferarriSF90.png"
+  },
+  {
+    "model": "F8 Tributo",
+    "price": "₹4.02 Cr",
+    "power": "710 hp",
+    "topSpeed": "340 km/h",
+    "image": "./images/ferarriF8.png"
+  },
+  {
+    "model": "488 GTB",
+    "price": "₹3.88 Cr",
+    "power": "661 hp",
+    "topSpeed": "330 km/h",
+    "image": "./images/ferarriGTB.png"
+  },
+  {
+    "model": "Roma",
+    "price": "₹3.76 Cr",
+    "power": "612 hp",
+    "topSpeed": "320 km/h",
+   "image": "./images/roma.png"
+  },
+  {
+    "model": "Purosangue",
+    "price": "₹10.50 Cr",
+    "power": "715 hp",
+    "topSpeed": "310 km/h",
+   "image": "./images/purosangue.png"
+  }
+],
+    "Lamborghini": [
+  {
+    "model": "Huracan",
+    "price": "₹4.00 Cr",
+    "power": "631 hp",
+    "topSpeed": "325 km/h",
+    "image": "./images/Lambo_huracane.png"
+  },
+  {
+    "model": "AV",
+    "price": "₹6.25 Cr",
+    "power": "769 hp",
+    "topSpeed": "350 km/h",
+    "image": "./images/aventador.png"
+  },
+  {
+    "model": "Revuelto",
+    "price": "₹8.89 Cr",
+    "power": "1001 hp",
+    "topSpeed": "350 km/h",
+   "image": "./images/revuelto.png"
+  },
+  {
+    "model": "Urus",
+    "price": "₹4.57 Cr",
+    "power": "657 hp",
+    "topSpeed": "305 km/h",
+   "image": "./images/urus.png"
+  },
+  {
+    "model": "Gallardo",
+    "price": "₹3.06 Cr",
+    "power": "562 hp",
+    "topSpeed": "325 km/h",
+   "image": "./images/gallardo.png"
+  }
+],
+    "Porsche": [
+  {
+    "model": "911",
+    "price": "₹1.99 Cr",
+    "power": "379 hp",
+    "topSpeed": "293 km/h",
+    "image": "./images/porsche_911.png"
+  },
+  {
+    "model": "Cayenne",
+    "price": "₹1.42 Cr",
+    "power": "348 hp",
+    "topSpeed": "248 km/h",
+   "image": "./images/porsche_cayenne.png"
+  },
+  {
+    "model": "Panamera",
+    "price": "₹1.68 Cr",
+    "power": "348 hp",
+    "topSpeed": "272 km/h",
+   "image": "./images/porsche_panamera.png"
+  },
+  {
+    "model": "Macan",
+    "price": "₹96 Lakh",
+    "power": "261 hp",
+    "topSpeed": "232 km/h",
+   "image": "./images/porsche_macan.png"
+  },
+  {
+    "model": "Taycan",
+    "price": "₹1.67 Cr",
+    "power": "402 hp",
+    "topSpeed": "230 km/h",
+   "image": "./images/porsche_taycan.png"
+  }
+],
+    "Tesla": [
+  {
+    "model": "Model S",
+    "price": "₹1.50 Cr",
+    "power": "1020 hp",
+    "topSpeed": "322 km/h",
+    "image": "./images/Tesla_ModelS.png"
+  },
+  {
+    "model": "Model 3",
+    "price": "₹60 Lakh",
+    "power": "498 hp",
+    "topSpeed": "261 km/h",
+   "image": "./images/Tesla_Model3.png"
+  },
+  {
+    "model": "Model X",
+    "price": "₹1.80 Cr",
+    "power": "1020 hp",
+    "topSpeed": "262 km/h",
+   "image": "./images/Tesla_ModelX.png"
+  },
+  {
+    "model": "Model Y",
+    "price": "₹70 Lakh",
+    "power": "456 hp",
+    "topSpeed": "250 km/h",
+    "image": "./images/Tesla_ModelY.png"
+  }
+],
+    "RollsRoyce": [
+  {
+    "model": "Phantom",
+    "price": "₹10.48 Cr",
+    "power": "563 hp",
+    "topSpeed": "250 km/h",
+    "image": "./images/Rolls_Royce_Phantom.png"
+  },
+  {
+    "model": "Ghost",
+    "price": "₹6.95 Cr",
+    "power": "563 hp",
+    "topSpeed": "250 km/h",
+     "image": "./images/Rolls_Royce_Ghost.png"
+  },
+  {
+    "model": "Cullinan",
+    "price": "₹6.95 Cr",
+    "power": "563 hp",
+    "topSpeed": "250 km/h",
+    "image": "./images/Rolls_Royce_Cullinan.png"
+  }
+],
+    "Bentley": [
+  {
+    "model": "Continental GT",
+    "price": "₹5.23 Cr",
+    "power": "771 hp",
+    "topSpeed": "335 km/h",
+    "image": "./images/continentalgt.png"
+  },
+  {
+    "model": "Flying Spur",
+    "price": "₹5.25 Cr",
+    "power": "771 hp",
+    "topSpeed": "285 km/h",
+    "image": "./images/flying spur.png"
+  },
+  {
+    "model": "Bentayga",
+    "price": "₹4.10 Cr",
+    "power": "542 hp",
+    "topSpeed": "290 km/h",
+    "image": "./images/bentayga.png"
+  }
+],
+    "McLaren": [
+  {
+    "model": "720S",
+    "price": "₹4.65 Cr",
+    "power": "710 hp",
+    "topSpeed": "341 km/h",
+    "image": "./images/Mclaren _720S.png"
+  },
+  {
+    "model": "750S",
+    "price": "₹5.91 Cr",
+    "power": "740 hp",
+    "topSpeed": "332 km/h",
+    "image": "./images/Mclaren_750S.png"
+  },
+  {
+    "model": "Artura",
+    "price": "₹5.10 Cr",
+    "power": "671 hp",
+    "topSpeed": "330 km/h",
+    "image": "./images/mclaren_Artura.png"
+  }
+],
+   "Bugatti": [
+  {
+    "model": "Chiron",
+    "price": "₹28.00 Cr",
+    "power": "1479 hp",
+    "topSpeed": "420 km/h",
+   "image": "./images/buggati chiron.png"
+  },
+  {
+    "model": "Veyron",
+    "price": "₹12.00 Cr",
+    "power": "1001 hp",
+    "topSpeed": "407 km/h",
+    "image": "./images/buggati veyron.png"
+  },
+  {
+    "model": "Mistral",
+    "price": "₹41.00 Cr",
+    "power": "1578 hp",
+    "topSpeed": "420 km/h",
+    "image": "./images/mistral.png"
+  }
+],
+"AstonMartin": [
+  {
+    "model": "DB11",
+    "price": "₹3.80 Cr",
+    "power": "528 hp",
+    "topSpeed": "309 km/h",
+   "image": "./images/Aston_Martin_db11.png"
+  },
+  {
+    "model": "DBX",
+    "price": "₹4.63 Cr",
+    "power": "697 hp",
+    "topSpeed": "310 km/h",
+    "image": "./images/Aston_Martin_DBX.png"
+  },
+  {
+    "model": "Vantage",
+    "price": "₹3.99 Cr",
+    "power": "656 hp",
+    "topSpeed": "325 km/h",
+   "image": "./images/aston_martin_vantage.png"
+  }
+]
+}

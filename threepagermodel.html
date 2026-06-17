@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="threepager.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="title">
+            <h3>Drive<span style="color: rgb(255, 204, 0);">X</span></h3>
+        </div>
+        <nav class="navlinks">
+            <a href="threepagerhome.html">Home</a>
+            <a href="threepagermodel.html">Models</a>
+            <a href="threepagerabout.html">About</a>
+            <a href="#">Services</a>
+        </nav>
+        <div class="btn">
+            <button>Contact Us</button>
+        </div>
+       
+        <div id="hamburger">☰</div>
+
+        <div id="menu">
+            <a href="threepagerhome.html">Home</a>
+            <a href="threepagermodel.html">Models</a>
+            <a href="threepagerabout.html">About</a>
+        </div>
+
+
+    </header>
+
+    <!-- Page Header Section -->
+
+    <div class="model-header">
+        <div class="model-content">
+            <h1>Choose the <br> <span style="color:rgb(255, 204, 0) ; font-size: 70px;">POWER</span> <br> You Need</h1>
+            <p>Precision Engineering, Unmatched Performance. <br> Explore our lineup of exceptional machines.</p>
+        </div>
+
+        <div class="m-stats">
+            <div class="m-demo">
+                <i class="fa-solid fa-car" style="color: rgb(255, 212, 59);"></i>
+                <h4>50+</h4>
+                <p>Models</p>
+            </div>
+            <div class="m-demo">
+                <i class="fa-solid fa-people-line" style="color: rgb(255, 212, 59);"></i>
+                <h4>10K+</h4>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="m-demo">
+                <i class="fa-solid fa-trophy" style="color: rgb(255, 212, 59);"></i>
+                <h4>15+</h4>
+                <p>Awards Won</p>
+            </div>
+        </div>
+
+    </div>
+       <div class="m-collections">OUR COLLECTION</div>
+    <form>
+        <select id="Brands">
+            <option value="" selected disabled>Choose Brand</option>
+        </select>
+
+        <select id="Models">
+            <option value="" selected disabled>Choose Model</option>
+        </select>
+    </form>
+
+    <div id="car-container"></div>
+    <div class="cta-banner">
+        <div class="cta-content">
+            <h1>Can't Find What You Like?</h1>
+            <p>Contact us and let us help you find your dream car.</p>
+            <button class="cta-btn">Contact Us</button>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <hr>
+    <div class="footer-section">
+        <div class="drivex">
+            <h2>Drive<span style="color: rgb(255, 204, 0);">X</span></h2>
+            <p>DriveX brings you the world's finest peformance machine.Engineered for performance.Designed for
+                passion.</p>
+        </div>
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        <div class="resources">
+            <h4>Resources</h4>
+            <ul type="none">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h4>Follow Us</h4>
+            <ul type="none">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="filter.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+        });
+    </script>
+</body>
+
+</html>
